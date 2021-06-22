@@ -7,6 +7,11 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local1">
+            <Annotations Target="SAP.TravelType/Description">
+                <Annotation Term="com.sap.vocabularies.Common.v1.Text" Path="TravelID">
+                    <Annotation Term="com.sap.vocabularies.UI.v1.TextArrangement" EnumMember="com.sap.vocabularies.UI.v1.TextArrangementType/TextLast" />
+                </Annotation>
+            </Annotations>
             <Annotations Target="SAP.TravelType">
                 <Annotation Term="UI.DataPoint" Qualifier="TravelBeginDateOpenInProgress">
                     <Record Type="UI.DataPointType">
