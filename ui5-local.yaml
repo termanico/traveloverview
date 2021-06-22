@@ -1,11 +1,11 @@
-specVersion: '2.0'
+specVersion: "2.0"
 metadata:
-  name: 'traveloverview'
+  name: traveloverview
 type: application
 framework:
   name: SAPUI5
-  version: '1.91.0'
-  libraries: 
+  version: 1.91.0
+  libraries:
     - name: sap.m
     - name: sap.f
     - name: sap.ushell
@@ -19,16 +19,16 @@ framework:
     - name: themelib_sap_fiori_3
 server:
   customMiddleware:
-  - name: fiori-tools-proxy
-    afterMiddleware: compression
-    configuration:
-      ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
-      backend:
-      - path: /sap
-        url: https://bc3c55c8-24e7-4f3d-a363-160805222a5a.abap.eu10.hana.ondemand.com
-        scp: true
-  - name: fiori-tools-appreload
-    afterMiddleware: compression
-    configuration:
-     port: 35729
-     path: webapp
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        backend:
+          - path: /sap
+            url: https://bc3c55c8-24e7-4f3d-a363-160805222a5a.abap.eu10.hana.ondemand.com
+            scp: true
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
