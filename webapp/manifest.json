@@ -40,22 +40,14 @@
                 }
             },
             "zui_fe_travel_000055_o4": {
-                "uri": "/sap/opu/odata/sap/ZUI_FE_BOOKING_000055_O2/",
+                "uri": "/sap/opu/odata4/sap/zui_fe_travel_000055_o4/srvd/sap/zui_fe_travel_000055_o4/0001/",
                 "type": "OData",
                 "settings": {
-                    "odataVersion": "2.0",
+                    "odataVersion": "4.0",
                     "annotations": [
-                        "zui_fe_travel_000055_o4_Annotation",
                         "annotation0"
                     ],
                     "localUri": "localService/zui_fe_travel_000055_o4/metadata.xml"
-                }
-            },
-            "zui_fe_travel_000055_o4_Annotation": {
-                "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZUI_FE_BOOKING_000055_O2_VAN',Version='0001')/$value/",
-                "type": "ODataAnnotation",
-                "settings": {
-                    "localUri": "localService/zui_fe_travel_000055_o4/zui_fe_travel_000055_o4_Annotation.xml"
                 }
             },
             "annotation0": {
@@ -125,7 +117,10 @@
                 "dataSource": "zui_fe_travel_000055_o4",
                 "preload": true,
                 "settings": {
-                    "defaultCountMode": "Inline"
+                    "synchronizationMode": "None",
+                    "operationMode": "Server",
+                    "autoExpandSelect": true,
+                    "earlyRequests": true
                 }
             }
         },
