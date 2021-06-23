@@ -62,6 +62,21 @@
         "sourceTemplate": {
             "id": "OVP.smartovptemplate",
             "version": "1.41.1"
+        },
+        "crossNavigation": {
+            "inbounds": {
+                "sap-fe-demo-traveloverview-inbound": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    },
+                    "semanticObject": "Travel",
+                    "action": "overview",
+                    "title": "Travel Overview",
+                    "subTitle": "",
+                    "icon": ""
+                }
+            }
         }
     },
     "sap.ui": {
