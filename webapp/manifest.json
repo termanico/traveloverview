@@ -251,5 +251,9 @@
     },
     "sap.ui.generic.app": {
         "settings": {}
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "sap-fe-demo-traveloverview"
     }
 }
